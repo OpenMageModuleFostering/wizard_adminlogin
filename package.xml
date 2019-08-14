@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Wizard_AdminLogin</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Admin login extension provides options to an admin user to change view of admin login page.</summary>
+    <description>Admin Login extension provides lot of customization options through which anyone can easily transform the general Magento login page into a customized attractive login page with desired text and colors.</description>
+    <notes>New Extension</notes>
+    <authors><author><name>Sujeet Kr Singh</name><user>sujeet</user><email>sujeet.kumar.000@gmail.com</email></author></authors>
+    <date>2015-05-23</date>
+    <time>10:37:28</time>
+    <contents><target name="magecommunity"><dir name="Wizard"><dir name="AdminLogin"><dir name="Helper"><file name="Data.php" hash="29eb1c98df04971da2274d6418413331"/></dir><dir name="etc"><file name="config.xml" hash="a95d94cd9577c129eafeac6259315c82"/><file name="system.xml" hash="a8b04daca4b2009f77a13e59bbc741d6"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Wizard_AdminLogin.xml" hash="24ef4269ab23cc96b5eed0a3d595bc7a"/></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="adminlogin.xml" hash="96a13f67082985a2ec6fd8fae9ad74ca"/></dir><dir name="template"><file name="wizard_login.phtml" hash="e4c092ca81b131355e213ab7a1fb7740"/><file name="wizard_forgotpassword.phtml" hash="7635fa1e51a5ee63c27fe76579707636"/></dir></dir></dir></dir></target><target name="mageskin"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="images"><dir name="wizard"><file name="favicon.ico" hash="88733ee53676a47fc354a61c32516e82"/><file name="logo.gif" hash="5c77654c424b0a35cc24d28df5166dc4"/></dir></dir></dir></dir></dir></target><target name="mageweb"><dir name="js"><dir name="wizard"><dir name="jscolor"><file name="arrow.gif" hash="5034704a76cd55c1cbcbc58ea6bf523f"/><file name="cross.gif" hash="ba9a274b9323753cd95bc3b1eb2f4e5f"/><file name="demo.html" hash="edf71251cb2be20322d2efb00aee86a6"/><file name="hs.png" hash="fefa1a03d92ebad25c88dca94a0b63db"/><file name="hv.png" hash="990d71cada17da100653636cf8490884"/><file name="jscolor.js" hash="b65a1505390592ac6c0177d6b84774e0"/></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

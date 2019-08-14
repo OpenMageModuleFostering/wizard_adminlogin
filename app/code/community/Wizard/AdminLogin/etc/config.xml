@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<!-- 
+ * Magento Wizard Admin Login Module
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category   Wizard
+ * @package    Wizard_AdminLogin
+ * @copyright  Copyright (c) 2015 Wizard (http://www.sujeetkrsingh.com)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ *
+--> 
+<config>
+	<modules>
+		<Wizard_AdminLogin>
+			<version>1.0.0</version>
+		</Wizard_AdminLogin>
+	</modules>
+	 <global>
+        <helpers>
+            <wizard_adminlogin>
+                <class>Wizard_AdminLogin_Helper</class>
+            </wizard_adminlogin>
+        </helpers>
+         
+    </global>
+    <admin>
+         <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <wizard_adminlogin before="Mage_Adminhtml">Wizard_AdminLogin_Adminhtml</wizard_adminlogin>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+        <default>
+            <adminlogin>
+                <condition_name>admin_login</condition_name>
+            </adminlogin>
+        </default>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <admin_login>
+                                            <title>Admin Login</title>
+                                        </admin_login>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        <layout>
+            <updates>
+                <adminlogin>
+                    <file>adminlogin.xml</file>
+                </adminlogin>
+            </updates>
+        </layout>
+    </adminhtml>
+    <default>
+        <admin_login>
+            <general>
+                <window_title>Log into Magento Admin</window_title>
+                <bg_color>#F4F4F4</bg_color>
+                <btnbg_color>#867bc4</btnbg_color>
+                <btnborder_color>#5b5bb2</btnborder_color>
+                <btnhoverbg_color>#9a90d1</btnhoverbg_color>
+                <btnfont_color>#FFFFFF</btnfont_color>
+                <labelfont_color>#555555</labelfont_color>
+                <linkfont_color>#EA7601</linkfont_color>
+            </general>
+            <loginform>
+                <loginbg_color>#EEEEEE</loginbg_color>
+                <loginborder_color>#CCCCCC</loginborder_color>
+                <header_text>Log into Admin Panel</header_text>
+                <header_text_color>#555555</header_text_color>
+                <loginbtn_text>Login</loginbtn_text>
+            </loginform>
+            <forgotform>
+                <forgotpwdheader_text>Forgot your user name or password?</forgotpwdheader_text>
+                <forgotpwdbtn_text>Retrieve Password</forgotpwdbtn_text>
+            </forgotform>
+        </admin_login>
+    </default>
+</config>

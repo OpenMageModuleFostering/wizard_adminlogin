@@ -1,0 +1,255 @@
+<?xml version="1.0"?>
+<!-- 
+ * Magento Wizard Admin Login Module
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category   Wizard
+ * @package    Wizard_AdminLogin
+ * @copyright  Copyright (c) 2015 Wizard (http://www.sujeetkrsingh.com)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ *
+--> 
+<config>
+    <tabs>
+        <wizard translate="label" module="wizard_adminlogin">
+            <label>Wizard Extensions</label>
+            <sort_order>100</sort_order>
+        </wizard>
+    </tabs>
+    <sections>
+        <admin_login translate="label" module="wizard_adminlogin">
+            <label>Admin Login</label>
+            <tab>wizard</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>301</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label">
+                    <label>General</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                        <fields>
+                            <active translate="label">
+                                <label>Enabled</label>
+                                <frontend_type>select</frontend_type>
+                                <source_model>adminhtml/system_config_source_yesno</source_model>
+                                <sort_order>0</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </active>
+                            <logo translate="label">
+                                <label>Logo</label>
+                                <frontend_type>image</frontend_type>
+                                <backend_model>adminhtml/system_config_backend_image</backend_model>
+                                <upload_dir config="system/filesystem/media" scope_info="1">wizard</upload_dir> 
+                                <base_url type="media" scope_info="1">wizard</base_url>
+                                <comment>Select logo image</comment>
+                                <sort_order>1</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </logo>
+                            <favicon translate="label">
+                                <label>Favicon File Name</label>
+                                <frontend_type>image</frontend_type>
+                                <backend_model>adminhtml/system_config_backend_image</backend_model>
+                                <upload_dir config="system/filesystem/media" scope_info="1">wizard</upload_dir> 
+                                <base_url type="media" scope_info="1">wizard</base_url>
+                                <comment>Select favicon image. Allowed file types: ICO, PNG, GIF, JPG, JPEG, APNG, SVG. Not all browsers support all these formats!</comment>
+                                <sort_order>2</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </favicon>
+                            <window_title translate="label">
+                                <label>Title</label>
+                                <comment>Enter title of the page</comment>
+                                <frontend_type>text</frontend_type>
+                                <sort_order>3</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </window_title>
+                            <bg_color translate="label">
+                                <label>Page Background Color</label>
+                                <comment>Choose background color</comment>
+                                <frontend_type>text</frontend_type>
+                                <frontend_class>color {hash:true}</frontend_class>
+                                <sort_order>4</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </bg_color>
+                            <btnbg_color translate="label">
+                                <label>Button Background Color</label>
+                                <comment>Choose button background color</comment>
+                                <frontend_type>text</frontend_type>
+                                <frontend_class>color {hash:true}</frontend_class>
+                                <sort_order>5</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </btnbg_color>
+                            <btnborder_color translate="label">
+                                <label>Button Border Color</label>
+                                <comment>Choose button border color</comment>
+                                <frontend_type>text</frontend_type>
+                                <frontend_class>color {hash:true}</frontend_class>
+                                <sort_order>6</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </btnborder_color>
+                            <btnhoverbg_color translate="label">
+                                <label>Button Hover Background Color</label>
+                                <comment>Choose button hover background color</comment>
+                                <frontend_type>text</frontend_type>
+                                <frontend_class>color {hash:true}</frontend_class>
+                                <sort_order>7</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </btnhoverbg_color>
+                            <btnfont_color translate="label">
+                                <label>Button Text Color</label>
+                                <comment>Choose button text color</comment>
+                                <frontend_type>text</frontend_type>
+                                <frontend_class>color {hash:true}</frontend_class>
+                                <sort_order>8</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </btnfont_color>
+                            <labelfont_color translate="label">
+                                <label>Label Text Color</label>
+                                <comment>Choose label text color</comment>
+                                <frontend_type>text</frontend_type>
+                                <frontend_class>color {hash:true}</frontend_class>
+                                <sort_order>9</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </labelfont_color>
+                            <linkfont_color translate="label">
+                                <label>Link Text Color</label>
+                                <comment>Choose link text color</comment>
+                                <frontend_type>text</frontend_type>
+                                <frontend_class>color {hash:true}</frontend_class>
+                                <sort_order>10</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </linkfont_color>
+                        </fields>
+                    </general>
+                    <loginform translate="label">
+                        <label>Login Form</label>
+                        <frontend_type>text</frontend_type>
+                        <sort_order>3</sort_order>
+                        <show_in_default>1</show_in_default>
+                        <show_in_website>1</show_in_website>
+                        <show_in_store>1</show_in_store>
+                        <fields>
+                            <loginbg_color translate="label">
+                                <label>Login Box Background Color</label>
+                                <comment>Choose login box background color</comment>
+                                <frontend_type>text</frontend_type>
+                                <frontend_class>color {hash:true}</frontend_class>
+                                <sort_order>1</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </loginbg_color>
+                            <loginborder_color translate="label">
+                                <label>Login Box Border Color</label>
+                                <comment>Choose login box border color</comment>
+                                <frontend_type>text</frontend_type>
+                                <frontend_class>color {hash:true}</frontend_class>
+                                <sort_order>2</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </loginborder_color>
+                            <header_text translate="label">
+                                <label>Header Text</label>
+                                <comment>Enter header text of login form</comment>
+                                <frontend_type>text</frontend_type>
+                                <sort_order>3</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </header_text>
+                            <header_text_color translate="label">
+                                <label>Header Text Color</label>
+                                <comment>Choose header text color</comment>
+                                <frontend_type>text</frontend_type>
+                                <frontend_class>color {hash:true}</frontend_class>
+                                <sort_order>4</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </header_text_color>
+                            <loginbtn_text translate="label">
+                                <label>Login Button Text</label>
+                                <comment>Enter login button text</comment>
+                                <frontend_type>text</frontend_type>
+                                <sort_order>5</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </loginbtn_text>
+                        </fields>
+                    </loginform>
+                    <forgotform translate="label">
+                        <label>Forgot Password Form</label>
+                        <frontend_type>text</frontend_type>
+                        <sort_order>4</sort_order>
+                        <show_in_default>1</show_in_default>
+                        <show_in_website>1</show_in_website>
+                        <show_in_store>1</show_in_store>
+                        <fields>
+                            <forgotpwdheader_text translate="label">
+                                <label>Forgot Password Header Text</label>
+                                <comment>Enter forgot password header text</comment>
+                                <frontend_type>text</frontend_type>
+                                <sort_order>1</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </forgotpwdheader_text>
+                            <forgotpwdbtn_text translate="label">
+                                <label>Forgot Password Button Text</label>
+                                <comment>Enter forgot password button text</comment>
+                                <frontend_type>text</frontend_type>
+                                <sort_order>2</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </forgotpwdbtn_text>
+        				</fields>
+                    </forgotform>
+            </groups>
+        </admin_login>
+    </sections>
+</config>
