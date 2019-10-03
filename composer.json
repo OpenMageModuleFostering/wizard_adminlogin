@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Wizard_AdminLogin",
+    "name": "OpenMageModuleFostering\/Wizard_AdminLogin",
     "type": "magento-module",
     "license": "Open-Software-License-(OSL)",
     "homepage": "",
     "description": "Admin login extension provides options to an admin user to change view of admin login page.",
     "authors": [
-    {
-        "name": "Sujeet Kr Singh",
-        "email": "sujeet.kumar.000@gmail.com"
-    }
-],
+        {
+            "name": "Sujeet Kr Singh",
+            "email": "sujeet.kumar.000@gmail.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
