@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Wizard_AdminLogin",
+    "name": "openmage-module-fostering\/wizard_adminlogin",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Admin login extension provides options to an admin user to change view of admin login page.",
     "authors": [
